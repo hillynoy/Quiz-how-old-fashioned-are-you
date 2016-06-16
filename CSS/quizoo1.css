@@ -1,0 +1,58 @@
+.pic {
+    width: 900px;
+    height: 450px;
+}
+
+.question {
+    margin-top: 100px;
+
+
+}
+.title {
+    font-family: "Montserrat Light";
+    font-size: 30px;
+    line-height: 200%;
+}
+
+.answer {
+    font-family: "Montserrat Light";
+    font-size: 25px;
+    line-height: 200%;
+}
+
+#drop {
+    font-size: 25px;
+    height: 50px;
+    width: 30%;
+}
+
+.selected{
+    border:5px solid greenyellow;
+    box-sizing: border-box;
+}
+
+#question4 {
+    width: 50px;
+    height: 30px;
+    font-size: 25px;
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer button{
+    padding:5px 30px;
+    font-size: 55px;
+    border-radius: 25px;
+    font-weight: bold;
+    background-color: cornflowerblue;
+    color: black;
+}
+
+.quiz.title {
+    text-align: center;
+    font-size: 55px;
+
+}
+

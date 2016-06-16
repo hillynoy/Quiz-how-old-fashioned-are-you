@@ -1,37 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>quizoo</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/quizoo1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 </head>
+
 
 <body>
 
 <div class="container">
+    <div class="row">
 
+    <div class="empty col-lg-1" >
+    </div>
+
+        <lable class="quiz title col-lg-10"> HOW OLD FASHIONED ARE YOU?</lable> <br>
+
+        <div class="empty col-lg-1" >
+        </div>
+</div>
     <!--question #1-->
-    <div class="radio">
-        <lable for="question one"> WHAT WOULD BE YOUR ULTIMATE B-DAY PRESENT?</lable> <br>
+    <div class="row">
 
-        <label><input type="radio" name="question1"> VR glasses</label> <br>
-        <label><input type="radio" name="question1"> A sword and an enchanted medallion.</label> <br>
-        <label><input type="radio" name="question1"> A concert ticket and a joint</label> <br>
+        <div class="empty col-lg-1" >
+        </div>
+
+    <div class="question col-lg-10">
+        <lable class="title"> WHAT WOULD BE YOUR ULTIMATE B-DAY PRESENT?</lable> <br>
+
+        <label class="answer one"><input type="radio" name="question1" value="0"> VR glasses</label> <br>
+        <label class="answer one"><input type="radio" name="question1" value="2"> A vinyl record and scotch.</label> <br>
+        <label class="answer one"><input type="radio" name="question1" value="1"> A concert ticket and a joint</label> <br>
+    </div>
+
+        <div class="empty col-lg-1" >
+        </div>
 
     </div>
 
     <!--question #2-->
-    <div class = "checkbox">
-        <lable for = "question two"> HOW DOES YOUR DATE-NIGHT LOOK LIKE?</lable> <br>
+    <div class="row">
+
+        <div class="empty col-lg-1" >
+        </div>
+
+    <div class = "question col-lg-10">
+        <lable class = "title" for = "title two"> HOW DOES YOUR DATE-NIGHT LOOK LIKE?</lable> <br>
         <span>
-            <img src = "./pics/date1.jpg">
-            <img src = "./pics/date2.1.png">
-            <img src = "./pics/date3.jpg">
+            <img class="pic selected" data-q-value="1"  name="question2" onclick="toggleSelected(this);" src = "./pics/date2.1.png">
+            <img class="pic" data-q-value="2" name="question2" onclick="toggleSelected(this);" src = "./pics/date3.jpg">
+            <img class="pic" data-q-value="0" name="question2" onclick="toggleSelected(this);" src = "./pics/date1.jpg">
         </span>
     </div>
 
+        <div class="empty col-lg-1" >
+        </div>
+
+    </div>
+    <!--question #3-->
+    <div class="row">
+
+        <div class="empty col-lg-1" >
+        </div>
+
+    <div class="question col-lg-10">
+        <lable class="title" for="title three"> WHERE WOULD YOU FIND YOUR OTHER HALF?</lable> <br>
+
+        <label class="answer three"><input type="checkbox" name="question3" value="0"> Tinder </label> <br>
+        <label class="answer three"><input type="checkbox" name="question3" value="0"> Facebook  </label> <br>
+        <label class="answer three"><input type="checkbox" name="question3" value="2"> At bowling </label> <br>
+        <label class="answer three"><input type="checkbox" name="question3" value="2"> In church / synagogue </label> <br>
+        <label class="answer three"><input type="checkbox" name="question3" value="1"> At a friend's wedding </label> <br>
+        <label class="answer three"><input type="checkbox" name="question3" value="2"> in kindergarten </label> <br>
+        <label class="answer three"><input type="checkbox" name="question3" value="0"> Pickup bar  </label> <br>
+    </div>
+
+        <div class="empty col-lg-1" >
+        </div>
+
+    </div>
+    <!--question #4-->
+    <div row>
+
+        <div class="empty col-lg-1" >
+        </div>
+
+    <div class="question col-lg-10">
+        <lable class="title" for="title three">HOW MANY DATES WOULD YOU GO ON BEFORE GETTING INTO BED?</lable> <br>
+        <input type = "number" id="question4"/>
+    </div>
+
+        <div class="empty col-lg-1" >
+        </div>
+
+    </div>
+
+    <!--question #5-->
+    <div row>
+        <div class="empty col-lg-1" >
+        </div>
+
+    <div class="question col-lg-10">
+        <lable class="title" for="title three">WHAT SHOULD A GENTLEMAN DOWHEN A WOMAN IS ABOUT TO ENTER A ROOM RIGHT AFTER HIM?  </lable> <br>
+        <select id="drop">
+            <option class="answer five" name="question5" value="1">Just go in</option>
+            <option class="answer five" name="question5" value="0">She's in front, then she should open the door for me</option>
+            <option class="answer five" name="question5" value="2">Open the door for her, of course!</option>
+        </select>
+    </div>
+
+        <div class="empty col-lg-1" >
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <button onclick="calculateScore();"> Sumbit </button>
+    </div>
+
+
+
+
+
+    <script src="JS/quizoo1.js"> </script>
 
 </div>
-
 </body>
 </html>
