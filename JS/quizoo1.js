@@ -1,17 +1,24 @@
 var calculateScore = function() {
 
     var totalSum = checkAnswer1() + checkAnswer2() + checkAnswer3() + checkAnswer4() + checkAnswer5();
-
+    var msg ="";
+    var bg = "";
     if (totalSum >= 0 && totalSum <= 2) {
-        alert("You're not old fashioned at all! " +
-            " actually, it seems like you belong to a shitty generation...")
+        msg = "You're not old fashioned at all! " +
+            " actually, it seems like you belong to a shitty generation...";
+        bg = "url('./pics/ff.jpg')"
     }
     else if (totalSum >= 3 && totalSum <= 5) {
-        alert("you have your 60's woodstock charm, but should probably work on your manners ...")
+        msg ="you have your 60's woodstock charm, but should probably work on your manners ...";
+        bg = "url('./pics/hippie.jpg')"
     }
     else {
-        alert("You're OLD-SCHOOL!!! A breath of fresh air from the past.")
+        msg ="You're OLD-SCHOOL!!! A breath of fresh air from the past.";
+        bg = "url('./pics/ww.jpg')"
     }
+    document.getElementById("message").innerHTML = msg;
+    document.getElementById("message").style.backgroundImage = bg;
+    document.getElementById("lightbox").style.display = "block";
 }
 
 
