@@ -36,7 +36,7 @@ var checkAnswer1 = function () {
             result1 = parseInt(currantAnswer.value);
         }
             } return result1;
-}
+};
 
  //********************************************************************************************
     //second question pictures
@@ -44,7 +44,7 @@ var checkAnswer2 = function() {
     var selectedPic = document.getElementsByClassName("pic selected");
     var selectedPicVal = selectedPic[0].getAttribute("data-q-value");
     return parseInt(selectedPicVal);
-}
+};
 
 var toggleSelected = function(pic) {
 
@@ -56,7 +56,7 @@ var toggleSelected = function(pic) {
     if (pic.className.indexOf("selected") === -1) {         //if pic in clean
         pic.className = "pic selected";
     }
-}
+};
 
 //********************************************************************************************
     //third question
@@ -72,7 +72,7 @@ var checkAnswer3 =function () {
             result3 = result3 + answerValue;
         }
     }return result3
-}
+};
 
 //********************************************************************************************
 
@@ -92,7 +92,7 @@ var checkAnswer4 = function () {
     }
     return result4
 
-}
+};
 
 
 
@@ -101,8 +101,7 @@ var checkAnswer4 = function () {
     //fifth question
 var checkAnswer5 = function () {
     var dropDown = document.getElementById("drop");
-    var result5 = parseInt(dropDown.value);
 
-     return result5
-}
+     return parseInt(dropDown.value);
+};
 
