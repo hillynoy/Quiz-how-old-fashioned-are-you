@@ -19,7 +19,16 @@ var calculateScore = function() {
     document.getElementById("message").innerHTML = msg;
     document.getElementById("message").style.backgroundImage = bg;
     document.getElementById("lightbox").style.display = "block";
-}
+};
+
+
+    part1 = $("#partOne").show();
+    part2 = $("#partTwo").hide();
+    part3 = $("#partThree").hide();
+    part4 = $("#partFour").hide();
+    part5 = $("#partFive").hide();
+
+
 
 
 //********************************************************************************************
@@ -41,6 +50,8 @@ var checkAnswer1 = function () {
  //********************************************************************************************
     //second question pictures
 var checkAnswer2 = function() {
+    part1.hide();
+    part2.show();
     var selectedPic = document.getElementsByClassName("pic selected");
     var selectedPicVal = selectedPic[0].getAttribute("data-q-value");
     return parseInt(selectedPicVal);
@@ -61,6 +72,8 @@ var toggleSelected = function(pic) {
 //********************************************************************************************
     //third question
 var checkAnswer3 =function () {
+    part2.hide();
+    part3.show();
     var allAnswers = document.getElementsByName("question3");
     var result3 = 0;
 
@@ -78,6 +91,8 @@ var checkAnswer3 =function () {
 
     //fourth question
 var checkAnswer4 = function () {
+    part3.hide();
+    part4.show();
     var result4 = 0;
     var userAnswer = parseInt(document.getElementById("question4").value);
 
@@ -100,6 +115,8 @@ var checkAnswer4 = function () {
 
     //fifth question
 var checkAnswer5 = function () {
+    part4.hide();
+    part5.show();
     var dropDown = document.getElementById("drop");
 
      return parseInt(dropDown.value);
