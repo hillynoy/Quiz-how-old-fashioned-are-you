@@ -1,3 +1,8 @@
+body {
+    background-image: url("../pics/HdUqen.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .pic {
     width: 900px;
@@ -88,4 +93,15 @@
     text-shadow: 3px 3px 3px black;
 }
 
+.pic {
+    display: inline-block;
+    width: 33%;
+    height: auto;
+}
 
+.next {
+    background-color: #31b0d5;
+    color: white;
+    font-size: larger;
+
+}
